@@ -1,20 +1,7 @@
 # This will be the OOP page to assign scores between both leagues, ESPN vs OTTONEU League
 
 
-def espnscoring():
-    return (r + tb + rbi + bb + sb) - (k + cs)
 
-
-def ottoneu():
-    return ((ab *-1)+
-            (5.6*h)+
-            (2b*2.9)+
-            (3b*5.7)+
-            (hr*9.4)+
-            (bb*3)+
-            (hbp*3)+
-            (sb*1.9)-
-            (cs*-2.8))
 
 
 class BatterStats:
@@ -35,3 +22,16 @@ class BatterStats:
         self.3b = 3b
         self.hr = hr
 
+    def espnscoring(self):
+        return (r + tb + rbi + bb + sb) - (k + cs)
+
+    def ottoneu(self):
+        return ((ab * -1) +
+                (5.6 * h) +
+                (2b * 2.9) +
+                (3b * 5.7) +
+                (hr * 9.4) +
+                (bb * 3) +
+                (hbp * 3) +
+                (sb * 1.9) -
+                (cs * -2.8))
