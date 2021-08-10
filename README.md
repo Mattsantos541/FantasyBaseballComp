@@ -1,7 +1,9 @@
 # FantasyBaseballComp
 
-Desc: Collect baseball stats from over the years to compare to the different scoring formats I've used.
+Collect baseball stats from over the years to compare to the different scoring formats I've used.
 CBS, ESPN, and Ottoneu 
+
+Play out 2 seasons of Fantasy and see how the standings would have played out in comparison to the scoring in place.
 
 Compare the scoring to WAR rankings to find which one whos the truely the best players.
 
