@@ -1,0 +1,23 @@
+Desc: Pull Stats from 2018, 2019 season for batters and pitchers.
+Compare the league scoring from CBS, ESPN, and Ottoneu
+
+Play out final team rosters of those two season from let it rain dynasty league
+
+Objects:
+
+        Batters:
+            2018:
+            2019:
+            CBS()
+            ESPN()
+            Ottoneu()
+
+        Pitchers:
+            2018:
+            2019:
+            CBS()
+            ESPN()
+            Ottoneu()
+
+
+Compare to that season's WAR
