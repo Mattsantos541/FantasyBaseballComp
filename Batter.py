@@ -22,9 +22,11 @@ class BatterStats:
         self.3b = 3b
         self.hr = hr
 
-    def espnscoring(self):
+    @staticmethod
+    def espnscoring():
         return (r + tb + rbi + bb + sb) - (k + cs)
 
+    @staticmethod
     def ottoneu(self):
         return ((ab * -1) +
                 (5.6 * h) +
@@ -35,3 +37,14 @@ class BatterStats:
                 (hbp * 3) +
                 (sb * 1.9) -
                 (cs * -2.8))
+    def cbs(self):
+        return ((h) +
+                (2b * 2) +
+                 (3b * 3) +
+                (bb) +
+                (cs * -1) +
+                (hr * 4 ) +
+                (k * -0.5) +
+                (r) +
+                (rbi) +
+                (sb * 2 ))
