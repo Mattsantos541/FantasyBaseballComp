@@ -1,5 +1,5 @@
 class PitcherStats:
-    def __init__(self, name, team, pos, ip, h, er, bb, k, cg, nh, pg, w, l, hbp, hr, sv, holds):
+    def __init__(self, name, team, pos, ip, h, er, bb, k, cg, nh, pg, w, l, hbp, hr, sv, holds, bs, qs, so):
         self.name = name
         self.team= team
         self.pos = pos
@@ -14,7 +14,10 @@ class PitcherStats:
         self.l = l
         self.hbp = hbp
         self.sv = sv
-        self.holds= holds
+        self.holds = holds
+        self.bs = bs
+        self.qs = qs
+        self.so = so
 
     def espnscoring():
         return ((ip*3)+
@@ -38,3 +41,17 @@ class PitcherStats:
                 (hr*-12.3)+
                 (sv*5)+
                 (holds*4))
+
+    def cbs(self):
+        return ((bs*5)+
+                (cg*5)+
+                (er*-1)+
+                (ip) +
+                (k) +
+                (l* - 5) +
+                (nh* 10) +
+                (pg* 15)+
+                (qs * 5) +
+                (s* 9) +
+                (so * 5) +
+                (w *10))
