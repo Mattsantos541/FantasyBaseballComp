@@ -21,3 +21,7 @@ Objects:
 
 
 Compare to that season's WAR
+
+Do not think I need to use OOP for this now.
+
+WIll import and apply these in pandas
